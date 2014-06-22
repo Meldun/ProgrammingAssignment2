@@ -36,8 +36,8 @@ cacheSolve <- function(x, ...) {
                 return(m)
         }
         
-        data <- x$get()           ## if not in cache it solves the Inverse
-        m <- solve(data, ...)     ## and stores the result in cache
+        data <- x$get()           
+        m <- solve(data, ...)     ## if not in cache it solves the Inverse
         x$setsolve(m)
         m
 }
